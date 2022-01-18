@@ -32,8 +32,8 @@
     font: 300 3vmax "Roboto";
 }
 .shanguImage {
-    min-height: 45vmax;
-    min-width: 45vmax;
+    min-height: 41vmax;
+    min-width: 40vmax;
     background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.349)) ,url('../../images/art-1.df8c331ba28d42aab9a5f701e2adfb16.svg');
     background-repeat: no-repeat;
     background-position: center center;
