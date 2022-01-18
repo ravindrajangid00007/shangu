@@ -1,0 +1,93 @@
+.introBox {
+  margin-top: 79px;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.349)) ,url("../../images/hero-image.57593e425046752ea5674d385d2dae52.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.introWelcome {
+  height: 70vh;
+  width: 90%;
+  clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
+  background-color: #313636b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.testing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5vmax;
+  height: 50vh;
+}
+
+
+.socialIcons {
+  font-size: 9vmax;
+  position: absolute;
+  bottom: 2vmax;
+  left: 6vmax;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgba(255, 255, 255, 0.76);
+  width: 40%;
+  cursor: pointer;
+}
+.introWelcome {
+  word-spacing: 10px;
+}
+.color-white {
+  color: white;
+  font: 200 4vmax "Roboto";
+  line-height: 5vmax;
+}
+.color-yellow {
+  color: yellow;
+  font: 200 4vmax "Roboto";
+}
+
+.introWelcome p {
+  font: 300 1.8vmax "Roboto";
+  word-spacing: 10px;
+}
+
+.countdownBox {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0% 0px;
+  width: 70%;
+  margin: 20px 0 0px -15px;
+}
+
+.time,
+.colon {
+  font: 200 6vmax "Roboto";
+}
+.string {
+  font: 200 2.5vmax "Roboto";
+}
+
+@media screen and (max-width: 700px) {
+  .introBox {
+    min-height: 65vh;
+  }
+  .introWelcome {
+    height: 30vh;
+  }
+  .testing {
+    margin-left: 3vmax;
+  }
+}

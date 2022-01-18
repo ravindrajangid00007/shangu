@@ -1,0 +1,149 @@
+.claimBox {
+  background-color: #01112d;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 0% 0px;
+  margin: 12vmin;
+  border-radius: 40px;
+}
+.claimImageBox {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.349)) , url("../../images/buy-shangu.cdc0a6ccc38939ca4169f149ee1b276f.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 25vmin;
+  border-radius: 40px;
+}
+
+.claimInfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 5vmax;
+  margin-top: 4vmax;
+}
+.limitedTimeBox{
+    text-align: center;
+    height: 20vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.limitedTimeBox p{
+    font-size: 1.5vmax;
+    padding: 10px;
+    border: 2px solid #fcdf04;
+    background-color: #401700;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-yellow {
+  color: #fcdf04;
+}
+
+.claimInfoBoxHeading {
+  font: 400 4vmax "Roboto";
+}
+
+p {
+  font: 300 2vmax "Roboto";
+  color: #897a63;
+}
+.priceInfoBox h3 {
+  font: 300 2.5vmax "Roboto";
+}
+
+.priceInfoBox h3 span {
+  font: 300 2.5vmax "Roboto";
+}
+.priceInfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 6vmin;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.quantityBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  font: 100 1.5vmax "Roboto";
+  color: white;
+}
+.positive , .quantity , .negative {
+    font: 200 2vmax "Roboto";
+}
+
+.totalBox h3, .totalCryptoAmount{
+    font: 300 2.5vmax "Roboto";
+    color: white;
+}
+
+.quantityIncDec {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+.totalBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.buyNowButton {
+  width: 90%;
+  padding: 1vmax !important;
+  font: 300 1.5vmax "Roboto" !important;
+  background-color: #fcdf04 !important;
+}
+
+@media screen and (max-width: 700px) {
+  .claimBox {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    margin: 12vmin;
+    border-radius: 40px;
+  }
+  .claimImageBox {
+    grid-row: 1/2;
+    height: 50vh;
+    margin: 0 8vmax;
+  }
+  .claimInfoBox {
+    grid-row: 2/3;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .claimInfoBoxHeading,
+  .claimInfoBoxHeading span {
+    font-size: 6vmax;
+  }
+  p {
+    font-size: 2.7vmax;
+    
+
+  }
+
+  .priceInfoBox {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

@@ -1,0 +1,91 @@
+.faqsHeading {
+    margin: 5vmax 0 5vmax 12vmin ;
+}
+
+.faqsImageAndBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between!important;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.faqsBack {
+    background: #01112d;
+    -webkit-clip-path: polygon(0 8%,100% 0,100% 100%,0 92%);
+    clip-path: polygon(0 8%,100% 0,100% 100%,0 92%);
+    height: 100vh;
+    position: absolute;
+    width: 100%; 
+    z-index: 9;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.faqsQuestionsHeading h4 {
+    font: 300 2vmax "Roboto";
+    margin: 2vmin 0;
+}
+.faqsQuestionsHeading h4 span{
+    font: 300 3vmax "Roboto";
+}
+.shanguImage {
+    min-height: 45vmax;
+    min-width: 45vmax;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0, 0, 0, 0.349)) ,url('../../images/art-1.df8c331ba28d42aab9a5f701e2adfb16.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 80;
+    margin: 4vmin 12vmin;
+    align-self: flex-start;
+    border-radius: 50px;
+}
+
+.faqs {
+    z-index: 80;
+}
+
+.accordionBox {
+    border-radius: 50px !important;
+    margin: 2vmin 0;
+} 
+.accordionUpperCut {
+    border-radius: 0px 0px 40px 40px !important;
+}
+
+.accordionBottomCut {
+    border-radius: 40px 40px 0px 0px !important;
+}
+
+@media screen and (max-width: 900px) {
+    .shanguImage {
+        margin: 4vmin 5vmin;
+    }
+}
+
+@media  screen and (max-width: 768px){
+    .faqsImageAndBox {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .shanguImage {
+        align-self: center;
+    }
+    .faqsQuestionsHeading {
+       text-align: center;
+    }
+    .faqsQuestionsHeading h4 {
+        font: 300 3vmax "Roboto";
+        margin: 2vmin 0;
+    }
+    .faqsAccordion {
+        margin: 2vmax 7vmax;
+    }
+    .faqsBack {
+        height: 160vh;
+    }
+}

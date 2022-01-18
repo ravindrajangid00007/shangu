@@ -1,0 +1,65 @@
+.giveawayBox {
+    margin: 12vmin;
+}
+
+
+
+.giveawayHeading h1 , .giveawayBox span{
+    font: 400 4.5vmax "Roboto";
+    margin-bottom: 5vmax;
+}
+.giveawayParaAndList {
+    background-color: #01112D;
+    border-radius: 50px;
+    padding: 5vmax 3vmax;
+    position: relative;
+}
+.giveawayPara p{
+    font: 400 2vmax "Roboto";
+    color: white;
+    margin: 1vmax 0;
+}
+.circle {
+    height: 20px;
+    width: 20px;
+}
+.giveawayList ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.giveawayList ul li {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin: 1.4vmax 0;
+}
+
+
+.giveawayList ul li h3 {
+    font: 100 1.7vmax "Roboto";
+    color: white;
+    margin: 0 5vmax;
+}
+
+.giveawayList ul li p {
+    font: 100 1vmax "Roboto";
+    color: white;
+}
+
+.giveawayLineImage {
+    height: 24vmax;
+    width: 2vw;
+    background-image:url('../../images/line.87fb8f63f335f8a0a30f3d020022a243.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 16vmax;
+    left: 2.8vmax;
+
+}

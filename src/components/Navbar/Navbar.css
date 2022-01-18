@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbarBox {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: grid; 
+    grid-template-columns: 0.4fr 1fr 1.5fr 2fr 0.8fr 0.4fr; 
+    grid-template-rows: 1fr; 
+    gap: 0 10px; 
+    background-color: #03225B;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.logoBox {
+    grid-column: 2/3;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+.logoBox img {
+    height: 80px;
+}
+
+.navbarLinks {
+    grid-column: 4/5;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarLinksList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    gap: 13% 15%; 
+    justify-content: center;
+    align-items: center;
+}
+ 
+.navbarLinksList li a {
+    text-decoration: none;
+    font: 400 1.4vmax "Roboto";
+    color: white;
+}
+
+.publicSale {
+    grid-column: 5/6;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} 
+
+.publicSaleButton {
+    background-color: #fcdf04 !important ;
+    padding: 0.8vmax 1.5vmax !important ;
+}
